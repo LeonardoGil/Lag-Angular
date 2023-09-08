@@ -3,7 +3,7 @@
     column-gap: 14px;
     row-gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    margin-top: 50px;
+    margin-top: 40px;
     justify-content: space-around;
 }
 
@@ -11,17 +11,26 @@ input[type="text"] {
   border: solid 1px var(--primary-color);
   padding: 10px;
   border-radius: 8px;
+  border-color: transparent;
   margin-right: 4px;
   display: inline-block;
-  width: 30%;
+  width: 80%;
 }
 
-button {
-  padding: 10px;
-  border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: white;
-  border-radius: 8px;
+section.bar-top {
+  background-color: red;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form.form-filter {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
