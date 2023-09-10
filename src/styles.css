@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: dimgray;
 }
 :root {
   --primary-color: #605DC8;

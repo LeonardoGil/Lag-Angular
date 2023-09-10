@@ -1,7 +1,9 @@
-<section class="bar-top">
+<section>
+  <div class="bar-top">
     <form class="form-filter">
-      <input type="text" placeholder="Filtrar" #filter>
+      <input type="text" [formControl]="this.housingSearch" (input)="onSearch()">
     </form>
+  </div>
 </section>
 <section class="results">
     <app-housing-location 

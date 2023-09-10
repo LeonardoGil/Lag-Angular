@@ -1,25 +1,20 @@
-.results {
-    display: grid;
-    column-gap: 14px;
-    row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    margin-top: 40px;
-    justify-content: space-around;
+section {
+  padding: 0;
 }
 
 input[type="text"] {
-  border: solid 1px var(--primary-color);
+  border: none;
   padding: 10px;
-  border-radius: 8px;
-  border-color: transparent;
-  margin-right: 4px;
+  border-radius: 10px;
   display: inline-block;
   width: 80%;
 }
 
-section.bar-top {
-  background-color: red;
-  border-radius: 0 0 8px 8px;
+div.bar-top {
+  margin-left: 4px;
+  margin-right: 4px;
+  background-image: radial-gradient(rgb(70, 68, 68), rgb(20, 20, 20));
+  border-radius: 0 0 12px 12px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +26,15 @@ form.form-filter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.results {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin-top: 40px;
+  justify-content: space-around;
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
